@@ -1,0 +1,72 @@
+:root {
+    --primary-navy: #0A192F;
+    --medical-blue: #00B4D8;
+    --pure-white: #FFFFFF;
+    --soft-grey: #F8F9FA;
+    --whatsapp-green: #25D366;
+}
+
+body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--soft-grey); scroll-behavior: smooth; }
+
+/* NAVIGATION */
+nav {
+    background: white; padding: 15px 5%; display: flex; justify-content: space-between;
+    align-items: center; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); z-index: 1000;
+}
+.nav-links a { text-decoration: none; margin-left: 20px; color: var(--primary-navy); font-weight: bold; }
+
+/* LAYOUT */
+header { text-align: center; padding: 80px 20px; background-color: #0A192F !important; color: #FFFFFF !important; border-bottom: 5px solid #00B4D8; }
+.container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+
+.card {
+    background: white; border-radius: 15px; padding: 30px; margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); text-align: center;
+}
+
+/* THEMES */
+.food-theme { border-left: 10px solid orange; }
+.thrift-theme { border-left: 10px solid #9933ff; }
+.tutor-theme { border-left: 10px solid var(--medical-blue); }
+
+.price-tag { font-size: 1.2rem; font-weight: bold; margin: 15px 0; color: #333; }
+
+.order-btn {
+    display: inline-block; background: var(--medical-blue); color: white; padding: 12px 25px;
+    text-decoration: none; border-radius: 50px; font-weight: bold; transition: 0.3s;
+}
+.order-btn:hover { transform: scale(1.05); }
+
+/* WHATSAPP FLOAT */
+.whatsapp-float {
+    position: fixed; bottom: 40px; right: 40px; background-color: var(--whatsapp-green);
+    color: white; width: 60px; height: 60px; border-radius: 50px;
+    display: flex; align-items: center; justify-content: center; font-size: 30px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none;
+}
+
+.countdown { color: red; font-size: 1.1rem; font-weight: bold; margin: 10px 0; }
+.logo img {
+height: 50px;
+width: auto;
+display: block;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-text {
+    animation: fadeIn 1.5s ease-out forwards;
+}
