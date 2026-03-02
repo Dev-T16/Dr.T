@@ -153,3 +153,45 @@ body.light-mode {
     transform: scale(1.05);
     background-color: #0077B6;
 }
+
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left:0;
+    height:4px;
+    background: var(--medical-blue);
+    width:0%;
+    z-index: 9999;
+    transition: width 0.1s ease-out;
+}
+
+.stats-bar {
+    padding: 40px 0;
+    background: #0A192F; 
+    border-top: 1px solid #1E293B;
+    border-bottom: 1px solid #1E293B;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--medical-blue);
+    text-shadow: 0 0 10px rgba(0, 180, 216, 0.3);
+}
+
+.stat-label {
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
